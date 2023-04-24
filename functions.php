@@ -39,9 +39,6 @@ if(! function_exists( 'register_style' )){
         {
             wp_enqueue_style('max_width_styles',get_template_directory_uri().'/max_width.css',false,1.0,'all');
         }
-    
-   
-    
     }
     add_action('wp_enqueue_scripts','register_style');
 
