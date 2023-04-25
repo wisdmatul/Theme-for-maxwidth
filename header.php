@@ -8,6 +8,14 @@
 </head>
 
 <body <?php body_class(); ?>>
+<header>
+  <!-- <div class="logo">
+    <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo"></a>
+  </div> -->
+  <nav>
+    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+  </nav>
+</header>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content">
