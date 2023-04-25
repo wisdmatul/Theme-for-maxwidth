@@ -44,10 +44,11 @@ if(! function_exists( 'register_style' )){
 
 }
 
+
+//adding custom image size
 add_action( 'after_setup_theme', 'custom_image_sizes' );
 function custom_image_sizes() {
     add_image_size( 'custom_img', 300,250,true);
-     // 300 pixels wide (and unlimited height)
 }
 
 
